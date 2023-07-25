@@ -16,12 +16,30 @@
         rel="stylesheet">
     <!-- custom css file -->
     <link rel="stylesheet" href="style.css">
+<!-- Custom Tailwind css -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              backgroundImage: {
+          'slider-img-1': "url('./images/banner1.png')",
+          'slider-img-2': "url('./images/banner2.png')",
+          'slider-img-3': "url('./images/banner3.png')",
+          'slider-img-4': "url('./images/banner4.png')",
+        },
+            }
+          }
+        }
+      </script>
 </head>
 
 <body class="lato">
-    <header>
+    <header class="max-w-screen-xl mx-auto ">
         <!-- Navbar  -->
-        <div class="navbar bg-slate-100 md:bg-rose-500 max-w-screen-xl mx-auto rounded-full mt-4">
+        <div class="navbar bg-slate-100 md:bg-rose-500  rounded-full mt-14 ">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -69,7 +87,77 @@
         <!-- Navbar end  -->
 
         <!-- Slider section start -->
-        
+
+        <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full">
+             <!-- Hero section  1 -->
+             <div class="hero mt-7 md:mt-14 h-[550px] bg-slider-img-1 rounded-lg">
+                <div class="hero-overlay bg-opacity-60 rounded-lg "></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 bg-rose-500 font-extrabold text-white">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle  bg-opacity-5 text-white">❮</a> 
+                <a href="#slide2" class="btn btn-circle  bg-opacity-5 text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <!-- Hero section  2 -->
+              <div class="hero mt-7 md:mt-14 h-[550px] bg-slider-img-1 rounded-lg">
+                <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                 <button class="btn border-0 bg-rose-500 font-extrabold text-white">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle  bg-opacity-5 text-white ">❮</a> 
+                <a href="#slide3" class="btn btn-circle  bg-opacity-5 text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <!-- Hero section  3 -->
+              <div class="hero mt-7 md:mt-14 h-[550px] bg-slider-img-1 rounded-lg">
+                <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 bg-rose-500 font-extrabold text-white">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle  bg-opacity-5 text-white">❮</a> 
+                <a href="#slide4" class="btn btn-circle  bg-opacity-5 text-white">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+               <!-- Hero section  4 -->
+               <div class="hero mt-7 md:mt-14 h-[550px] bg-slider-img-1 rounded-lg">
+                <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn border-0 bg-rose-500 font-extrabold text-white">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle  bg-opacity-5 text-white">❮</a> 
+                <a href="#slide1" class="btn btn-circle  bg-opacity-5 text-white">❯</a>
+              </div>
+            </div>
+          </div>
     </header>
 
     <main>
